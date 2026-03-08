@@ -1,5 +1,6 @@
 const navList = ['Shop', 'About', 'Lookbook', 'Visit Us', 'Contact'];
 
+// Declares
 const header = document.createElement('header');
 const logo = document.createElement('h1');
 const nav = document.createElement('nav');
@@ -14,6 +15,7 @@ const contentTitle = document.createElement('h1');
 const content = document.createElement('p');
 const contentButton = document.createElement('button');
 
+//Appends
 document.body.appendChild(header);
 document.body.appendChild(bodyContainer);
 header.appendChild(logo);
@@ -63,6 +65,7 @@ navList.forEach((item) => {
   nav.appendChild(link);
 });
 
+// Addding Contents
 logo.innerText = 'Blush.';
 
 const bag = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
@@ -91,7 +94,10 @@ content.innerText = 'Shop the latest fashion';
 contentButton.innerText = 'Shop Now';
 
 // Styles
-
+document.body.style.padding = "0";
+document.body.style.margin = "0";
+document.body.style.boxSizing = "border-box";
+document.body.style.fontFamily = `Arial, Helvetica, sans-serif`;
 document.body.style.backgroundColor = '#F0EEEE';
 document.body.style.height = '100%';
 
